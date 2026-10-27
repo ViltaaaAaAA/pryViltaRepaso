@@ -31,6 +31,8 @@
             lblCódigo = new Label();
             txtCodigo = new TextBox();
             btnRegistrar = new Button();
+            lblNombre = new Label();
+            txtNombre = new TextBox();
             SuspendLayout();
             // 
             // lblCódigo
@@ -44,14 +46,14 @@
             // 
             // txtCodigo
             // 
-            txtCodigo.Location = new Point(77, 27);
+            txtCodigo.Location = new Point(82, 27);
             txtCodigo.Name = "txtCodigo";
             txtCodigo.Size = new Size(100, 23);
             txtCodigo.TabIndex = 1;
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Location = new Point(202, 66);
+            btnRegistrar.Location = new Point(172, 109);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(75, 23);
             btnRegistrar.TabIndex = 2;
@@ -59,11 +61,29 @@
             btnRegistrar.UseVisualStyleBackColor = true;
             btnRegistrar.Click += btnRegistrar_Click;
             // 
+            // lblNombre
+            // 
+            lblNombre.AutoSize = true;
+            lblNombre.Location = new Point(25, 66);
+            lblNombre.Name = "lblNombre";
+            lblNombre.Size = new Size(51, 15);
+            lblNombre.TabIndex = 3;
+            lblNombre.Text = "Nombre";
+            // 
+            // txtNombre
+            // 
+            txtNombre.Location = new Point(82, 63);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new Size(100, 23);
+            txtNombre.TabIndex = 4;
+            // 
             // CargadeDatos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(297, 101);
+            ClientSize = new Size(278, 144);
+            Controls.Add(txtNombre);
+            Controls.Add(lblNombre);
             Controls.Add(btnRegistrar);
             Controls.Add(txtCodigo);
             Controls.Add(lblCódigo);
@@ -80,5 +100,7 @@
         private Label lblCódigo;
         private TextBox txtCodigo;
         private Button btnRegistrar;
+        private Label lblNombre;
+        private TextBox txtNombre;
     }
 }

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
+using System.Web;
 using System.Windows.Forms;
 
 namespace pryViltaRepaso
@@ -17,10 +18,15 @@ namespace pryViltaRepaso
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
+            int codi;
+            string name;
+            name = txtNombre.Text;
+            codi = int .Parse(txtCodigo.Text);
+            MessageBox.Show("el nombre es: " + name +  " Y el codigo es: " + codi.ToString());
 
-            string dato;
-            dato = txtCodigo.Text;
-            MessageBox.Show(dato);
+           
+
+
         }
     }
 }
